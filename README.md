@@ -1,3 +1,27 @@
-# Book_Sales_analysis_using_SQL
-This project focuses on analyzing book sales data using SQL. The goal is to extract meaningful insights from book sales, customer trends, and order patterns stored in a relational database. The dataset includes books, customers, and orders, allowing for comprehensive analysis.
-Executed a comprehensive SQL-based analysis of book sales using books.csv, customers.csv, and orders.csv datasets. Performed data cleaning, transformation, and normalization to ensure data integrity. Developed basic and advanced SQL queries, including JOINs, aggregate functions and subqueries, to extract meaningful insights on customer behavior, sales trends, and top-performing books. Created optimized queries for performance efficiency and provided actionable recommendations for business growth.
+📌 Overview
+
+This project focuses on analyzing book sales data using SQL to extract meaningful insights. The dataset includes details such as book titles, authors, genres, sales figures, and customer demographics. The goal is to provide data-driven insights to improve sales strategies and business decisions.
+
+🗃️ Dataset
+
+The dataset consists of the following tables:
+
+books: Contains book details such as title, author, genre, and price.
+
+sales: Records each sale, including book ID, quantity sold, revenue, and date of sale.
+
+customers: Stores customer demographics like age, gender, and location.
+
+stores: Lists store locations and performance metrics.
+
+🎯 Key Objectives
+
+Identify bestselling books and top authors.
+
+Analyze sales trends across different time periods.
+
+Examine the impact of genre popularity on revenue.
+
+Evaluate customer purchasing behavior.
+
+Compare sales across different locations.
