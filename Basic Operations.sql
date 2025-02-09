@@ -15,14 +15,18 @@ where country='Canada';
 
 -- Show orders placed in november 2023
 Select * from orders
-where YEAR(Order_Date)='2023';
+where Order_Date between '2023-11-01' and '2023-11-30';
 
 -- Retrive the total stocks of books available
- select Title, Stock from books;
+ select SUM(Stock) as Total_Stock from books;
  
  -- Find the detail of most expensive book
  select * from books
  where price = (Select MAX(Price) from books);
+-- OR
+SELECT * from books
+order by price DESC
+limit 1;
  
  -- Show all customers who ordered more than one quantity of books
  Select * from orders
@@ -38,7 +42,12 @@ where YEAR(Order_Date)='2023';
  -- Find the book with lowest stock.
  Select * from books
  where Stock = (Select MIN(Stock) from books);
+-- or
+select * from books
+ order by Stock
+ limit 1;
  
  -- Calculate the total revenue generated from all the orders.
- Select SUM(Total_Amount) from orders;
+ Select SUM(Total_Amount) AS Renenue
+ from orders;
  
